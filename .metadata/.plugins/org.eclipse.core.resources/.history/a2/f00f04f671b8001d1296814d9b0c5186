@@ -1,0 +1,16 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//Double : 64 bit = 8 byte
+		//Float  : 32 bit = 4 byte
+		
+		double a = 5.25;
+		double b = 4.0;
+		double c = 4d;
+		
+		System.out.println(c);		
+	}
+	
+}

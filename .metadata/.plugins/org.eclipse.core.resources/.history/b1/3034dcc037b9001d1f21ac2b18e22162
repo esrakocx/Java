@@ -1,0 +1,16 @@
+
+public class Main {
+	public static void main(String[] args) {
+		
+		String a = "Hello";
+		System.out.println(a + " Welcome!");
+		
+		String b = "Java";
+		String c = "Programming";
+		String d = "Language";
+		
+		String sum = b + b + d;
+		System.out.println("Sum:" + sum);
+	}
+
+}
