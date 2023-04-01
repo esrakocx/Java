@@ -10,5 +10,8 @@ public class Test {
 		car1.wheels = 4;
 		
 		System.out.println(car1.model);
+		
+		car1.setModel("A8");
+		System.out.println("Model of the car: " + car1.getModel());
 	}
 }
