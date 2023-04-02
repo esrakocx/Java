@@ -8,7 +8,16 @@ public class Account {
 	private String phone;
 	
 	public Account() {
-		System.out.println("It's our constructor.");
+		/*
+		this.accountNumber = "No information";
+		this.balance = 0.0;
+		this.name = "No information";
+		this.email = "No information";
+		this.phone = "No information";
+		*/
+		
+		//default values
+		this("No information", 0.0, "No information", "No information", "No information");
 	}
 	
 	public Account(String accountNumber, double balance, String name, String email, String phone) {
@@ -18,6 +27,19 @@ public class Account {
 		this.name = name;
 		this.email = email;
 		this.phone = phone;
+	}
+	
+	public Account(String name, String email, String phone) {
+		/*
+		this.name = name;
+		this.email = email;
+		this.phone = phone;
+		
+		this.balance = 0.0;
+		this.accountNumber = "No information";
+		*/
+		
+		this("No information", 0.0, name, email, phone);
 	}
 	
 	public void deposit(double amount) {
@@ -33,6 +55,14 @@ public class Account {
 			
 		else
 			System.out.println("Insufficient balance!");
+	}
+	
+	public void displayInfo() {
+		System.out.println("Account number: " + this.accountNumber);
+		System.out.println("Balance: " + this.balance);
+		System.out.println("Name: " + this.name);
+		System.out.println("Email: " + this.email);
+		System.out.println("Phone: " + this.phone + "\n");
 	}
 	
 	//Getter and setter functions of the fields
