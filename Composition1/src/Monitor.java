@@ -14,7 +14,7 @@ public class Monitor {
 	}
 	
 	public void shutDown() {
-		System.out.println("The computer is shutting down...");
+		System.out.println("The monitor is shutting down...");
 	}
 	
 	public String getModel() {
