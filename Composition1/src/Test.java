@@ -15,6 +15,5 @@ public class Test {
 		pc.getMonitor().shutDown();
 		pc.getMotherboard().upload_os("Ubuntu 16.0.4");
 		
-
 	}
 }
